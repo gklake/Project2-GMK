@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/dialogItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_item_name"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dialogItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogItemName"
+        android:layout_alignParentStart="true"
+        android:hint="@string/enter_item_description"
+        android:inputType="textShortMessage|textLongMessage"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dialogItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogItemDescription"
+        android:layout_alignParentStart="true"
+        android:hint="@string/enter_item_price"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dialogItemStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogItemPrice"
+        android:layout_alignParentStart="true"
+        android:hint="@string/enter_item_stock"
+        android:inputType="number|numberSigned"
+        android:textAlignment="center" />
+
+</RelativeLayout>

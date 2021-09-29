@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:paddingBottom="5dp"
+        app:cardBackgroundColor="@color/lightBlue">
+
+        <TextView
+            android:id="@+id/textViewItemName"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/line_1"
+            android:textColor="@color/darkPurple"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewItemDescription"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemName"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/line_2"
+            android:textColor="@color/darkPurple"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageTrashCan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:padding="4dp"
+            android:src="@drawable/ic_delete" />
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

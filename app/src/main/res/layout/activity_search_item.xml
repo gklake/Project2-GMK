@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPurple"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SearchItemActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/enter_desired_item"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#635B5B" />
+
+    <TextView
+        android:id="@+id/textViewItemInfo"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textAlignment="gravity"
+        android:textColor="@color/whiteish"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonAddItemToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_item_to_cart"
+        android:textColor="@color/darkPurple"
+        android:visibility="invisible" />
+
+</LinearLayout>

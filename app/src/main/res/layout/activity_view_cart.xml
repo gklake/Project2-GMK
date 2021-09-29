@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:padding="16dp"
+    tools:context=".ViewCartActivity">
+
+    <TextView
+        android:id="@+id/textViewCurrentCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username_s_cart"
+        android:textAlignment="center"
+        android:textColor="#332847"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewViewCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewCurrentCart"
+        android:background="@drawable/gradient_1"
+        android:padding="2dp"
+        android:scrollbars="vertical"/>
+
+
+</RelativeLayout>

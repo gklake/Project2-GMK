@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Project2GMK" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FBF5F5</item>
+        <item name="colorPrimaryVariant">#93AECB</item>
+        <item name="colorOnPrimary">#6F7F8E</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#E98A5E</item>
+        <item name="colorSecondaryVariant">#C16135</item>
+        <item name="colorOnSecondary">#332847</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/khula_semibold</item>
+
+    </style>
+
+    <style name = "specialToast">
+        <item name="stColorBackground">#E98A5E</item>
+        <item name="stSolidBackground">false</item>
+        <item name="stTextColor">#332847</item>
+        <item name="stStrokeColor">#332847</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stLength">SHORT</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stGravity">center</item>
+    </style>
+
+</resources>
